@@ -20,7 +20,7 @@ const corsOptions = {
 
 // dotenv config
 
-if (process.env.NODE_ENV !== "PRODUCTION") {
+if (process.env.NODE_ENV !== "production") {
   const dotenv = require("dotenv");
   dotenv.config({ path: "backend/config/config.env" });
 }
@@ -44,7 +44,7 @@ app.use("/api/v1", Payment);
 
 // **********  Deployment  **********
 
-if (process.env.NODE_ENV === "PRODUCTION") {
+if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/build")));
 
   app.get("*", (req, res) => {
