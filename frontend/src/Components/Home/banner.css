@@ -1,0 +1,38 @@
+.mySwiper,
+swiper-slide {
+    height: 80vh !important;
+}
+
+.mySwiper img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.swiper-button-next:after {
+    content: "next";
+    font-size: 10px;
+    color: #f3a024;
+    background: white;
+    padding: 7px 10px;
+    border-radius: 56%;
+}
+.swiper-button-prev:after {
+    content: "prev";
+    font-size: 10px;
+    color: #f3a024;
+    background: white;
+    padding: 7px 10px;
+    border-radius: 56%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #f3a024 !important;
+}
+
+@media screen and (max-width: 500px) {
+    .mySwiper,
+    swiper-slide {
+        height: 60vh !important;
+    }
+}

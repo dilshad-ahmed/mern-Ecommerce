@@ -1,0 +1,97 @@
+.login-container {
+    height: 300px;
+    width: 350px;
+    padding: 1rem;
+    box-shadow: 3px 3px 6px #bfbfbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: .5rem;
+  }
+  
+  .reg-container {
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    box-shadow: 3px 3px 6px #bfbfbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: .5rem;
+  }
+  
+  .form-container{
+    width: 100%;
+  }
+  
+  .form-control-modify {
+    margin-bottom: 1.5rem !important;
+    font-size: .9rem;
+  }
+  
+  .form-group{
+    position: relative;
+  }
+  
+  .input-text{
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    pointer-events: none;
+    transition: all 0.1s ease;
+    font-size: .9rem;
+    color: #7a7a7a;
+  }
+  
+  input:focus ~ .input-text , input:not(:placeholder-shown) ~ .input-text {
+    top: -13px;
+    left: 5px;
+    font-size: 13px;
+    opacity: 1;
+    color: #404040;
+    background: #fff;
+    padding: 0 7px;
+  }
+  
+  /* for ie browsers */
+  input:not(:-ms-input-placeholder) ~ .input-text {
+    top: -13px;
+    left: 5px;
+    font-size: 13px;
+    opacity: 1;
+    color: #404040;
+    background: #fff;
+    padding: 0 7px;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #f3a024 !important;
+    border-color: #ffac2f !important;
+    font-size: 0.9rem;
+  }
+  
+  .btn2 {
+    background-color: #60a92a;
+    color: #fff;
+  } 
+  
+  .btn2:hover {
+    background-color: #549e1c;
+    color: #fff;
+  }
+  
+  .btn-primary:focus {
+    box-shadow: none !important;
+  }
+  
+  .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #1d5068 !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+  
